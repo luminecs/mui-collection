@@ -1,6 +1,18 @@
 import { Box, Paper } from '@mui/material'
+import CodeBlock from './CodeBlock'
 
 export default function Index () {
+
+  const JSCode = `const App = props => {
+  return (
+    <div>
+      <h1> Prism JS </h1>
+      <div>Awesome Syntax Highlighter</div>
+    </div>
+  );
+};
+`;
+
   return (
     <>
       <Box
@@ -17,14 +29,9 @@ export default function Index () {
         <Paper variant="outlined" square/>
       </Box>
       <div>展示源码</div>
-      <pre>
-        <code>
-          const s = "1";
-          const s = "2";
-        </code>
-      </pre>
-      <div className='language-typescript'>const s = "1"</div>
-      <div className='hljs' dangerouslySetInnerHTML={{ __html: `<pre><p>sss</p></pre>` }}></div>
+      <div>
+        <CodeBlock code={JSCode} language="javascript" />
+      </div>
     </>
   )
 }
