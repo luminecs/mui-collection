@@ -1,0 +1,3 @@
+name: Deploy mui-collection actions
+# 触发 action 的动作
+on: push
