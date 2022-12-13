@@ -10,7 +10,7 @@ function App () {
 
   return (
     <Routes>
-      <Route path="/" element={<Index/>}/>
+      <Route path="/mui-collection" element={<Index/>}/>
     </Routes>
   )
 }
