@@ -8,7 +8,7 @@ function App () {
   return (
     <Routes>
       <Route path="/" element={<Index/>}/>
-      <Route path="/paper" element={<MyPaper/>}/>
+      <Route path="/mui/paper" element={<MyPaper/>}/>
     </Routes>
   )
 }
