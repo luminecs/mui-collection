@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mui-collection/static/css/main.073c9b0a.css",
-    "main.js": "/mui-collection/static/js/main.8b77dafc.js",
+    "main.js": "/mui-collection/static/js/main.197a174e.js",
     "static/js/787.5cbc987d.chunk.js": "/mui-collection/static/js/787.5cbc987d.chunk.js",
     "index.html": "/mui-collection/index.html",
     "main.073c9b0a.css.map": "/mui-collection/static/css/main.073c9b0a.css.map",
-    "main.8b77dafc.js.map": "/mui-collection/static/js/main.8b77dafc.js.map",
+    "main.197a174e.js.map": "/mui-collection/static/js/main.197a174e.js.map",
     "787.5cbc987d.chunk.js.map": "/mui-collection/static/js/787.5cbc987d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.8b77dafc.js"
+    "static/js/main.197a174e.js"
   ]
 }
