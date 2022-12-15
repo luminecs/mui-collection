@@ -7,6 +7,7 @@ export default function Index () {
       <RRLink to="/mui/paper">Paper</RRLink>
 
       <h2>MUI-system</h2>
+      <RRLink to="/mui/system/usage">usage</RRLink>
       <RRLink to="/mui/system/sx">sx prop</RRLink>
     </>
   )
