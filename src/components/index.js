@@ -1,14 +1,18 @@
 import { Link as RRLink } from 'react-router-dom'
 
+const link = {
+  margin: 2,
+}
+
 export default function Index () {
   return (
     <>
       <h2>MUI</h2>
-      <RRLink to="/mui/paper">Paper</RRLink>
+      <RRLink style={link} to="/mui/paper">Paper</RRLink>
 
       <h2>MUI-system</h2>
-      <RRLink to="/mui/system/usage">usage</RRLink>
-      <RRLink to="/mui/system/sx">sx prop</RRLink>
+      <RRLink style={link} to="/mui/system/usage">usage</RRLink>
+      <RRLink style={link} to="/mui/system/sx">sx prop</RRLink>
     </>
   )
 }
