@@ -1,5 +1,6 @@
-import { Box, styled } from '@mui/material'
+import { alpha, Box, styled } from '@mui/material'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
 
 const StatWrapper = styled('div')(
   ({ theme }) => `
@@ -94,6 +95,56 @@ export default function Usage () {
         </Box>
         <Box sx={{ color: 'text.secondary', display: 'inline', fontSize: 12 }}>
           vs. last week
+        </Box>
+      </Box>
+
+      <h2>Responsive demo</h2>
+      <Box>
+        <Box
+          component="img"
+          alt="The house from the offer."
+          src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&w=350&dpr=2"
+          sx={{
+            height: 233,
+            width: 350,
+            // todo 笔记：注意写法
+            maxHeight: { xs: 233, md: 167 },
+            maxWidth: { xs: 350, md: 250 },
+          }}
+        />
+        <Box
+          sx={{
+            display: 'flex', /* todo 笔记：让子元素横向排列 */
+            flexDirection: 'column', /* todo 笔记：让子元素纵向排列 */
+            alignItems: { xs: 'center', md: 'flex-start' }, /* todo */
+            m: 3,
+            minWidth: { md: 350 },
+          }}
+        >
+          {/* todo 笔记：Box 本质是 div，使用 Box 代替 div、span 等原生元素 */}
+          <Box component="span" sx={{ fontSize: 16, mt: 1 }}>
+            123 Main St, Phoenix AZ
+          </Box>
+          <Box component="span" sx={{ color: 'primary.main', fontSize: 22 }}>
+            $280,000 — $310,000
+          </Box>
+          <Box
+            sx={{
+              mt: 1.5,
+              p: 0.5, /* todo 笔记：函数 */
+              backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.1),
+              borderRadius: '5px',
+              color: 'primary.main',
+              fontWeight: 'medium',
+              display: 'flex',
+              fontSize: 12,
+              alignItems: 'center', /* todo 笔记：子元素 水平居中 */
+
+            }}
+          >
+            <ErrorOutlineIcon/>
+            CONFIDENCE SCORE 85%
+          </Box>
         </Box>
       </Box>
     </>
