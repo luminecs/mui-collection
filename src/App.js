@@ -6,6 +6,7 @@ import Sx from './components/mui-system/sx'
 import Usage from './components/mui-system/usage'
 import SuspenseTest from './react/suspense'
 import UseMemoTest from './react/useMemo'
+import WithoutUseMemoTest from './react/useMemo/indexWithoutUseMemo'
 
 function App () {
   return (
@@ -16,6 +17,7 @@ function App () {
       <Route path="/mui/system/sx" element={<Sx/>}/>
       <Route path="/react/suspense" element={<SuspenseTest/>}/>
       <Route path="/react/useMemo" element={<UseMemoTest/>}/>
+      <Route path="/react/WithoutUseMemo" element={<WithoutUseMemoTest/>}/>
     </Routes>
   )
 }
