@@ -4,7 +4,7 @@ import Index from './components'
 import MyPaper from './components/mui/MyPaper'
 import Sx from './components/mui-system/sx'
 import Usage from './components/mui-system/usage'
-import ArtistPage from './react/suspense/ArtistPage'
+import SuspenseTest from './react/suspense'
 
 function App () {
   return (
@@ -13,7 +13,7 @@ function App () {
       <Route path="/mui/paper" element={<MyPaper/>}/>
       <Route path="/mui/system/usage" element={<Usage/>}/>
       <Route path="/mui/system/sx" element={<Sx/>}/>
-      <Route path="/react/suspense" element={<ArtistPage/>}/>
+      <Route path="/react/suspense" element={<SuspenseTest/>}/>
     </Routes>
   )
 }
