@@ -9,6 +9,7 @@ export default function Index () {
     <>
       <h2>React</h2>
       <RRLink style={link} to="/react/suspense">Suspense</RRLink>
+      <RRLink style={link} to="/react/useMemo">useMemo</RRLink>
 
       <h2>MUI</h2>
       <RRLink style={link} to="/mui/paper">Paper</RRLink>
