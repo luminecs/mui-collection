@@ -7,6 +7,9 @@ const link = {
 export default function Index () {
   return (
     <>
+      <h2>React</h2>
+      <RRLink style={link} to="/react/suspense">Suspense</RRLink>
+
       <h2>MUI</h2>
       <RRLink style={link} to="/mui/paper">Paper</RRLink>
 
