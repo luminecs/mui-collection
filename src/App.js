@@ -9,6 +9,7 @@ import UseMemoTest from './react/useMemo'
 import WithoutUseMemoTest from './react/useMemo/indexWithoutUseMemo'
 import UseRefClickCounter from './react/useRef/click-counter'
 import UseRefStopwatch from './react/useRef/stopwatch'
+import UseRefFocusInput from './react/useRef/focus-input'
 
 function App () {
   return (
@@ -22,6 +23,7 @@ function App () {
       <Route path="/react/WithoutUseMemo" element={<WithoutUseMemoTest/>}/>
       <Route path="/react/useRef/click-counter" element={<UseRefClickCounter/>}/>
       <Route path="/react/useRef/stopwatch" element={<UseRefStopwatch/>}/>
+      <Route path="/react/useRef/focus-input" element={<UseRefFocusInput/>}/>
     </Routes>
   )
 }
