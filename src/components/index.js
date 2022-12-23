@@ -77,6 +77,11 @@ export default function Index () {
             UseContextTheme
           </RRLink>
         </Grid>
+        <Grid item xs={6}>
+          <RRLink to="/react/useEffect/connect-chat-server">
+            UseEffectConnectServer
+          </RRLink>
+        </Grid>
       </Grid>
 
       <h2>MUI</h2>

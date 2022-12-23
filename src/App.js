@@ -20,6 +20,7 @@ import UseReducerTodolistLmmer from './react/useReducer/todolist-lmmer'
 import UseReducerPassInitializerFunction
     from './react/useReducer/pass-initializer-function'
 import UseContextTheme from './react/useContext/theme'
+import UseEffectConnectServer from './react/useEffect/connect-chat-server'
 
 function App () {
   return (
@@ -43,6 +44,7 @@ function App () {
       <Route path="/react/useReducer/todolist-lmmer" element={<UseReducerTodolistLmmer/>}/>
       <Route path="/react/useReducer/pass-initializer-function" element={<UseReducerPassInitializerFunction/>}/>
       <Route path="/react/useContext/theme" element={<UseContextTheme/>}/>
+      <Route path="/react/useEffect/connect-chat-server" element={<UseEffectConnectServer/>}/>
     </Routes>
   )
 }
