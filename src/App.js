@@ -8,6 +8,7 @@ import SuspenseTest from './react/suspense'
 import UseMemoTest from './react/useMemo'
 import WithoutUseMemoTest from './react/useMemo/indexWithoutUseMemo'
 import UseRefClickCounter from './react/useRef/click-counter'
+import UseRefStopwatch from './react/useRef/stopwatch'
 
 function App () {
   return (
@@ -20,6 +21,7 @@ function App () {
       <Route path="/react/useMemo" element={<UseMemoTest/>}/>
       <Route path="/react/WithoutUseMemo" element={<WithoutUseMemoTest/>}/>
       <Route path="/react/useRef/click-counter" element={<UseRefClickCounter/>}/>
+      <Route path="/react/useRef/stopwatch" element={<UseRefStopwatch/>}/>
     </Routes>
   )
 }
