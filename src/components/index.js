@@ -82,6 +82,11 @@ export default function Index () {
             UseEffectConnectServer
           </RRLink>
         </Grid>
+        <Grid item xs={6}>
+          <RRLink to="/react/useEffect/listen-global-browser-event">
+            UseEffectListenGlobalEvent
+          </RRLink>
+        </Grid>
       </Grid>
 
       <h2>MUI</h2>

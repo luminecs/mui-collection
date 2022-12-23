@@ -21,6 +21,8 @@ import UseReducerPassInitializerFunction
     from './react/useReducer/pass-initializer-function'
 import UseContextTheme from './react/useContext/theme'
 import UseEffectConnectServer from './react/useEffect/connect-chat-server'
+import UseEffectListenGlobalEvent
+    from './react/useEffect/listen-global-browser-event'
 
 function App () {
   return (
@@ -45,6 +47,7 @@ function App () {
       <Route path="/react/useReducer/pass-initializer-function" element={<UseReducerPassInitializerFunction/>}/>
       <Route path="/react/useContext/theme" element={<UseContextTheme/>}/>
       <Route path="/react/useEffect/connect-chat-server" element={<UseEffectConnectServer/>}/>
+      <Route path="/react/useEffect/listen-global-browser-event" element={<UseEffectListenGlobalEvent/>}/>
     </Routes>
   )
 }
