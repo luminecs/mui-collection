@@ -13,6 +13,7 @@ import UseRefFocusInput from './react/useRef/focus-input'
 import UseRefScrollImageIntoView from './react/useRef/scroll-image-into-view'
 import UseRefVideoPlayer from './react/useRef/play-pause-video'
 import UseRefExposeRef from './react/useRef/expose-ref'
+import UseReducerCounter from './react/useReducer/counter/counter'
 
 function App () {
   return (
@@ -30,6 +31,7 @@ function App () {
       <Route path="/react/useRef/scroll-image-into-view" element={<UseRefScrollImageIntoView/>}/>
       <Route path="/react/useRef/play-pause-video" element={<UseRefVideoPlayer/>}/>
       <Route path="/react/useRef/expose-ref" element={<UseRefExposeRef/>}/>
+      <Route path="/react/useReducer/counter" element={<UseReducerCounter/>}/>
     </Routes>
   )
 }
