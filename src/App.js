@@ -16,6 +16,7 @@ import UseRefExposeRef from './react/useRef/expose-ref'
 import UseReducerCounter from './react/useReducer/counter/counter'
 import UseReducerForm from './react/useReducer/form'
 import UseReducerTodolist from './react/useReducer/todolist-array'
+import UseReducerTodolistLmmer from './react/useReducer/todolist-lmmer'
 
 function App () {
   return (
@@ -36,6 +37,7 @@ function App () {
       <Route path="/react/useReducer/counter" element={<UseReducerCounter/>}/>
       <Route path="/react/useReducer/form" element={<UseReducerForm/>}/>
       <Route path="/react/useReducer/todolist-array" element={<UseReducerTodolist/>}/>
+      <Route path="/react/useReducer/todolist-lmmer" element={<UseReducerTodolistLmmer/>}/>
     </Routes>
   )
 }
