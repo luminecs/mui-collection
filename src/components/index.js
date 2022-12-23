@@ -61,6 +61,11 @@ export default function Index () {
             UseReducerForm
           </RRLink>
         </Grid>
+        <Grid item xs={6}>
+          <RRLink style={link} to="/react/useReducer/todolist-array">
+            UseReducerTodolist
+          </RRLink>
+        </Grid>
       </Grid>
 
       <h2>MUI</h2>
