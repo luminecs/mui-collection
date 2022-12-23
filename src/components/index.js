@@ -56,6 +56,11 @@ export default function Index () {
             UseReducerCounter
           </RRLink>
         </Grid>
+        <Grid item xs={6}>
+          <RRLink style={link} to="/react/useReducer/form">
+            UseReducerForm
+          </RRLink>
+        </Grid>
       </Grid>
 
       <h2>MUI</h2>

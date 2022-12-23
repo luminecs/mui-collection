@@ -14,6 +14,7 @@ import UseRefScrollImageIntoView from './react/useRef/scroll-image-into-view'
 import UseRefVideoPlayer from './react/useRef/play-pause-video'
 import UseRefExposeRef from './react/useRef/expose-ref'
 import UseReducerCounter from './react/useReducer/counter/counter'
+import UseReducerForm from './react/useReducer/form'
 
 function App () {
   return (
@@ -32,6 +33,7 @@ function App () {
       <Route path="/react/useRef/play-pause-video" element={<UseRefVideoPlayer/>}/>
       <Route path="/react/useRef/expose-ref" element={<UseRefExposeRef/>}/>
       <Route path="/react/useReducer/counter" element={<UseReducerCounter/>}/>
+      <Route path="/react/useReducer/form" element={<UseReducerForm/>}/>
     </Routes>
   )
 }
