@@ -11,6 +11,7 @@ import UseRefClickCounter from './react/useRef/click-counter'
 import UseRefStopwatch from './react/useRef/stopwatch'
 import UseRefFocusInput from './react/useRef/focus-input'
 import UseRefScrollImageIntoView from './react/useRef/scroll-image-into-view'
+import UseRefVideoPlayer from './react/useRef/play-pause-video'
 
 function App () {
   return (
@@ -26,6 +27,7 @@ function App () {
       <Route path="/react/useRef/stopwatch" element={<UseRefStopwatch/>}/>
       <Route path="/react/useRef/focus-input" element={<UseRefFocusInput/>}/>
       <Route path="/react/useRef/scroll-image-into-view" element={<UseRefScrollImageIntoView/>}/>
+      <Route path="/react/useRef/play-pause-video" element={<UseRefVideoPlayer/>}/>
     </Routes>
   )
 }

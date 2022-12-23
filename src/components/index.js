@@ -42,6 +42,11 @@ export default function Index () {
           </RRLink>
         </Grid>
         <Grid item xs={6}>
+          <RRLink style={link} to="/react/useRef/play-pause-video">
+            UseRefVideoPlayer
+          </RRLink>
+        </Grid>
+        <Grid item xs={6}>
 
         </Grid>
       </Grid>
