@@ -1,4 +1,5 @@
 import { useReducer } from 'react'
+import { Grid } from '@mui/material'
 
 function createInitialState (username) {
   const initialTodos = []
@@ -64,6 +65,39 @@ function TodoList ({ username }) {
   )
 }
 
+function TodoList1 ({ username }) {
+  const [state, dispatch] = useReducer(reducer, createInitialState(username))
+  return (
+    <>
+      <input value={state.draft} onChange={e => {
+        dispatch({
+          type: 'changed_draft',
+          nextDraft: e.target.value,
+        })
+      }}/>
+      <button onClick={() => {
+        dispatch({ type: 'added_todo' })
+      }}>
+        Add
+      </button>
+      <ul>
+        {state.todos.map(item => (
+          <li key={item.id}>{item.text}</li>
+        ))}
+      </ul>
+    </>
+  )
+}
+
 export default function UseReducerPassInitializerFunction () {
-  return <TodoList username="Taylor"/>
+  return (
+    <Grid container>
+      <Grid item xs={6}>
+        <TodoList username="Taylor"/>
+      </Grid>
+      <Grid item xs={6}>
+        <TodoList1 username="Taylor"/>
+      </Grid>
+    </Grid>
+  )
 }
