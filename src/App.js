@@ -17,6 +17,8 @@ import UseReducerCounter from './react/useReducer/counter/counter'
 import UseReducerForm from './react/useReducer/form'
 import UseReducerTodolist from './react/useReducer/todolist-array'
 import UseReducerTodolistLmmer from './react/useReducer/todolist-lmmer'
+import UseReducerPassInitializerFunction
+    from './react/useReducer/pass-initializer-function'
 
 function App () {
   return (
@@ -38,6 +40,7 @@ function App () {
       <Route path="/react/useReducer/form" element={<UseReducerForm/>}/>
       <Route path="/react/useReducer/todolist-array" element={<UseReducerTodolist/>}/>
       <Route path="/react/useReducer/todolist-lmmer" element={<UseReducerTodolistLmmer/>}/>
+      <Route path="/react/useReducer/pass-initializer-function" element={<UseReducerPassInitializerFunction/>}/>
     </Routes>
   )
 }

@@ -67,6 +67,11 @@ export default function Index () {
             UseReducerTodolistLmmer
           </RRLink>
         </Grid>
+        <Grid item xs={6}>
+          <RRLink to="/react/useReducer/pass-initializer-function">
+            UseReducerPassInitializerFunction
+          </RRLink>
+        </Grid>
       </Grid>
 
       <h2>MUI</h2>
