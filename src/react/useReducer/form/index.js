@@ -14,6 +14,9 @@ function reducer (state, action) {
         age: state.age,
       }
     }
+    default: {
+      return {}
+    }
   }
   throw Error('Unknown action: ' + action.type)
 }
