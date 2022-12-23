@@ -15,10 +15,10 @@ function reducer (state, action) {
       }
     }
     default: {
-      return {}
+      throw Error('Unknown action: ' + action.type)
     }
   }
-  throw Error('Unknown action: ' + action.type)
+
 }
 
 export default function UseReducerForm () {
