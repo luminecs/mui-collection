@@ -19,6 +19,7 @@ import UseReducerTodolist from './react/useReducer/todolist-array'
 import UseReducerTodolistLmmer from './react/useReducer/todolist-lmmer'
 import UseReducerPassInitializerFunction
     from './react/useReducer/pass-initializer-function'
+import UseContextTheme from './react/useContext/theme'
 
 function App () {
   return (
@@ -41,6 +42,7 @@ function App () {
       <Route path="/react/useReducer/todolist-array" element={<UseReducerTodolist/>}/>
       <Route path="/react/useReducer/todolist-lmmer" element={<UseReducerTodolistLmmer/>}/>
       <Route path="/react/useReducer/pass-initializer-function" element={<UseReducerPassInitializerFunction/>}/>
+      <Route path="/react/useContext/theme" element={<UseContextTheme/>}/>
     </Routes>
   )
 }

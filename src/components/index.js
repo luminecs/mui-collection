@@ -72,6 +72,11 @@ export default function Index () {
             UseReducerPassInitializerFunction
           </RRLink>
         </Grid>
+        <Grid item xs={6}>
+          <RRLink to="/react/useContext/theme">
+            UseContextTheme
+          </RRLink>
+        </Grid>
       </Grid>
 
       <h2>MUI</h2>
