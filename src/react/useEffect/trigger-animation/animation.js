@@ -19,6 +19,7 @@ export class FadeInAnimation {
   onFrame () {
     const timePassed = performance.now() - this.startTime
     const progress = Math.min(timePassed / this.duration, 1)
+    this.onProgress(progress)
     if (progress < 1) {
       // We still have more frames to paint
       this.frameId = requestAnimationFrame(() => this.onFrame())
@@ -35,5 +36,4 @@ export class FadeInAnimation {
     this.frameId = null
     this.duration = 0
   }
-
 }
