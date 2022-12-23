@@ -23,6 +23,7 @@ import UseContextTheme from './react/useContext/theme'
 import UseEffectConnectServer from './react/useEffect/connect-chat-server'
 import UseEffectListenGlobalEvent
     from './react/useEffect/listen-global-browser-event'
+import UseContextTriggerAnimation from './react/useEffect/trigger-animation'
 
 function App () {
   return (
@@ -48,6 +49,7 @@ function App () {
       <Route path="/react/useContext/theme" element={<UseContextTheme/>}/>
       <Route path="/react/useEffect/connect-chat-server" element={<UseEffectConnectServer/>}/>
       <Route path="/react/useEffect/listen-global-browser-event" element={<UseEffectListenGlobalEvent/>}/>
+      <Route path="/react/useEffect/trigger-animation" element={<UseContextTriggerAnimation/>}/>
     </Routes>
   )
 }

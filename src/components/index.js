@@ -87,6 +87,11 @@ export default function Index () {
             UseEffectListenGlobalEvent
           </RRLink>
         </Grid>
+        <Grid item xs={6}>
+          <RRLink to="/react/useEffect/trigger-animation">
+            UseContextTriggerAnimation
+          </RRLink>
+        </Grid>
       </Grid>
 
       <h2>MUI</h2>
