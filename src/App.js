@@ -24,6 +24,7 @@ import UseEffectConnectServer from './react/useEffect/connect-chat-server'
 import UseEffectListenGlobalEvent
     from './react/useEffect/listen-global-browser-event'
 import UseContextTriggerAnimation from './react/useEffect/trigger-animation'
+import UseEffectDeadLoop from './issue/useEffect-dead-loop'
 
 function App () {
   return (
@@ -50,6 +51,7 @@ function App () {
       <Route path="/react/useEffect/connect-chat-server" element={<UseEffectConnectServer/>}/>
       <Route path="/react/useEffect/listen-global-browser-event" element={<UseEffectListenGlobalEvent/>}/>
       <Route path="/react/useEffect/trigger-animation" element={<UseContextTriggerAnimation/>}/>
+      <Route path="/issue/useEffect-dead-loop" element={<UseEffectDeadLoop/>}/>
     </Routes>
   )
 }

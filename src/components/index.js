@@ -94,6 +94,13 @@ export default function Index () {
         </Grid>
       </Grid>
 
+      <h2>Issue</h2>
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          <RRLink to="/issue/useEffect-dead-loop">UseEffectDeadLoop</RRLink>
+        </Grid>
+      </Grid>
+
       <h2>MUI</h2>
       <RRLink to="/mui/paper">Paper</RRLink>
 
