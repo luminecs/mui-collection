@@ -25,6 +25,7 @@ import UseEffectListenGlobalEvent
     from './react/useEffect/listen-global-browser-event'
 import UseContextTriggerAnimation from './react/useEffect/trigger-animation'
 import UseEffectDeadLoop from './issue/useEffect-dead-loop'
+import Borders from './components/mui-system/border'
 
 function App () {
   return (
@@ -33,6 +34,8 @@ function App () {
       <Route path="/mui/paper" element={<MyPaper/>}/>
       <Route path="/mui/system/usage" element={<Usage/>}/>
       <Route path="/mui/system/sx" element={<Sx/>}/>
+      <Route path="/mui/system/border" element={<Borders/>}/>
+
       <Route path="/react/suspense" element={<SuspenseTest/>}/>
       <Route path="/react/useMemo" element={<UseMemoTest/>}/>
       <Route path="/react/WithoutUseMemo" element={<WithoutUseMemoTest/>}/>

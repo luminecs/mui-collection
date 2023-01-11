@@ -107,6 +107,7 @@ export default function Index () {
       <h2>MUI-system</h2>
       <RRLink to="/mui/system/usage">usage</RRLink>
       <RRLink to="/mui/system/sx">sx prop</RRLink>
+      <RRLink to="/mui/system/border">border</RRLink>
     </>
   )
 }
