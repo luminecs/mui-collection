@@ -16,8 +16,7 @@ export default function CodeBlock ({ code, language, url }) {
   useEffect(() => {
     fetchText(url).then(t => {
       setText(t)
-      hljs.highlightAll()
-    })
+    }).then(() => hljs.highlightAll())
   }, [url])
 
   if (!text) return ''
