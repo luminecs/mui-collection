@@ -15,28 +15,24 @@ export default function CodeBlock ({ code, language, url }) {
 
   useEffect(() => {
     Prism.highlightAll()
-    if (url) {
-      fetchText(url).then(t => {
-        console.info(t)
-        setText(t)
-      })
-    }
-  }, [text, url])
+    fetchText(url).then(t => {
+      console.info(new Date())
+      setText(t)
+    })
+  }, [url, text])
 
   if (!text) return ''
 
   return (
     <>
-      <Paper variant="outlined" sx={{ width: '95%', my: 2, px: 2 }}>
+      <Paper variant="outlined" sx={{ my: 2, px: 2 }}>
         <h4 style={{ textDecoration: 'underline', cursor: 'pointer' }}
             onClick={() => setOpen(!open)}>
           {open ? '隐藏' : '显示'}代码示例
         </h4>
-        {open &&
-          <pre>
-            <code className={`language-javascript`}>{text}</code>
-          </pre>
-        }
+        <pre style={{ display: open ? 'block' : 'none' }}>
+          <code className={`language-javascript`}>{text}</code>
+        </pre>
       </Paper>
     </>
   )
