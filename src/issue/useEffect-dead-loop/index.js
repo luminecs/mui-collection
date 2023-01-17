@@ -17,6 +17,7 @@ function CountInputChangesDeadLoop1 () {
 
   // 在初始渲染之后，useEffect()执行更新状态的副作用回调函数。状态更新触发重新渲染。
   // useEffect(() => setCount(count + 1))
+  // eslint-disable-next-line
   useEffect(() => setCount(count + 1), [value])
   const onChange = ({ target }) => setValue(target.value)
 
