@@ -1,7 +1,7 @@
 import { alpha, Box, styled } from '@mui/material'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
-import CodeBlock2 from '../CodeBlock2'
+import CodeBlock from '../CodeBlock'
 
 const StatWrapper = styled('div')(
   ({ theme }) => `
@@ -165,7 +165,7 @@ export default function Usage () {
         </Box>
       </Box>
 
-      <CodeBlock2
+      <CodeBlock
         language="javascript"
         url="https://raw.githubusercontent.com/luminecs/mui-collection/main/src/components/mui-system/usage.js"/>
     </>

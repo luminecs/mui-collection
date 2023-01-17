@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import Prism from 'prismjs'
+import "highlight.js/styles/hybrid.css"
+import hljs from 'highlight.js'
 import { Paper } from '@mui/material'
-import 'prismjs/themes/prism-tomorrow.min.css'
 
 // <CodeBlock code={JSCode} language="javascript" />
 export default function CodeBlock ({ code, language, url }) {
@@ -15,9 +15,8 @@ export default function CodeBlock ({ code, language, url }) {
 
   useEffect(() => {
     fetchText(url).then(t => {
-      console.info(new Date())
       setText(t)
-      Prism.highlightAll()
+      hljs.highlightAll()
     })
   }, [url])
 
@@ -31,7 +30,7 @@ export default function CodeBlock ({ code, language, url }) {
           {open ? '隐藏' : '显示'}代码示例
         </h4>
         <pre style={{ display: open ? 'block' : 'none' }}>
-          <code className={`language-javascript`}>{text}</code>
+          <code className={`language-${language}`}>{text}</code>
         </pre>
       </Paper>
     </>
