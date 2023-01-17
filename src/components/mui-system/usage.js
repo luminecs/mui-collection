@@ -164,7 +164,8 @@ export default function Usage () {
         </Box>
       </Box>
 
-      <CodeBlock url="https://raw.githubusercontent.com/luminecs/mui-collection/main/src/components/mui-system/usage.js"/>
+      <CodeBlock language="javascript"
+        url="https://raw.githubusercontent.com/luminecs/mui-collection/main/src/components/mui-system/usage.js"/>
     </>
   )
 }
