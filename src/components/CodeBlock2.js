@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import 'highlight.js/styles/androidstudio.css'
-// import "highlight.js/styles/hybrid.css";
+import "highlight.js/styles/hybrid.css"
 import hljs from 'highlight.js'
 import { Paper } from '@mui/material'
 

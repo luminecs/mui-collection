@@ -1,7 +1,7 @@
 import { alpha, Box, styled } from '@mui/material'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline'
-import CodeBlock from '../CodeBlock'
+import CodeBlock2 from '../CodeBlock2'
 
 const StatWrapper = styled('div')(
   ({ theme }) => `
@@ -144,8 +144,9 @@ export default function Usage () {
             sx={{
               mt: 1.5,
               p: 0.5, /* todo 笔记：函数 */
-              backgroundColor: (theme) => alpha(theme.palette.primary.main,
-                0.1),
+              backgroundColor: (theme) => {
+                return alpha(theme.palette.primary.main, 0.1)
+              },
               borderRadius: '5px',
               color: 'primary.main',
               fontWeight: 'medium',
@@ -164,7 +165,8 @@ export default function Usage () {
         </Box>
       </Box>
 
-      <CodeBlock language="javascript"
+      <CodeBlock2
+        language="javascript"
         url="https://raw.githubusercontent.com/luminecs/mui-collection/main/src/components/mui-system/usage.js"/>
     </>
   )
