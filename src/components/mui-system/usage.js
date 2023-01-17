@@ -99,7 +99,18 @@ export default function Usage () {
       </Box>
 
       <h2>Responsive demo</h2>
-      <Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', md: 'row' },
+          alignItems: 'center',
+          bgcolor: 'background.paper',
+          overflow: 'hidden',
+          borderRadius: '12px',
+          boxShadow: 1,
+          fontWeight: 'bold'
+        }}
+      >
         <Box
           component="img"
           alt="The house from the offer."
@@ -132,14 +143,18 @@ export default function Usage () {
             sx={{
               mt: 1.5,
               p: 0.5, /* todo 笔记：函数 */
-              backgroundColor: (theme) => alpha(theme.palette.primary.main, 0.1),
+              backgroundColor: (theme) => alpha(theme.palette.primary.main,
+                0.1),
               borderRadius: '5px',
               color: 'primary.main',
               fontWeight: 'medium',
               display: 'flex',
               fontSize: 12,
               alignItems: 'center', /* todo 笔记：子元素 水平居中 */
-
+              '& svg': {
+                fontSize: 21,
+                mr: 0.5,
+              },
             }}
           >
             <ErrorOutlineIcon/>
